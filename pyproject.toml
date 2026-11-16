@@ -1,0 +1,11 @@
+[project]
+name = "self-improving-coding-harness"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+rag = ["fastembed==0.8.1", "sqlite-vec==0.1.9", "pypdf==6.19.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
